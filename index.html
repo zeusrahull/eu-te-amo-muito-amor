@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Wrapped ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TELA 0 -->
+
+    <section class="card">
+        <img src="sweater_weather.jpg" class="capa">
+
+        <h1 class="drop-text">Sweater Weather</h1>
+
+        <p class="drop-text">
+            The Neighbourhood
+        </p>
+
+        <button id="playMain" class="spotify-btn">
+            ▶ Tocar Música
+        </button>
+
+        <audio id="musicaPrincipal" loop>
+            <source src="The Neighbourhood - Sweater Weather (SPOTISAVER).mp3" type="audio/mp3">
+        </audio>
+    </section>
+
+    <!-- TELA 1 -->
+
+    <section class="card">
+
+        <h2 class="drop-text">
+            Nossos Momentos Juntos
+        </h2>
+
+        <div class="galeria">
+
+            <div class="foto-card">
+                <img src="eu_amor_um.jpeg">
+                <p class="drop-text">Nossa primeira viagem, foi tão bom dormir e estar ao seu lado. Estar ao seu lado é tão, mas tão bom.</p>
+            </div>
+
+            <div class="foto-card">
+                <img src="eu_amor_dois.jpeg">
+                <p class="drop-text">Nós voltando de viagem, foi bom ter você deitado em meu ombro</p>
+            </div>
+
+            <div class="foto-card">
+                <img src="eu_amor_tres.jpeg">
+                <p class="drop-text">Eu sou tão feliz ao seu lado...</p>
+            </div>
+
+            <div class="foto-card">
+                <img src="eu_amor_quatro.jpeg">
+                <p class="drop-text">Afinal de contas... Como não ser feliz sendo que tenho você ao meu lado?</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TELA 2 -->
+
+    <section class="card">
+
+        <h2 class="drop-text">
+            Bandas que têm um lugar especial no seu fone
+        </h2>
+
+        <div class="bandas">
+
+            <div class="banda">
+                <img src="banda_um.png">
+                <p class="drop-text">The Neighbourhood</p>
+            </div>
+
+            <div class="banda">
+                <img src="banda_dois.png">
+                <p class="drop-text">TV girl</p>
+            </div>
+
+            <div class="banda">
+                <img src="banda_tres.jpeg">
+                <p class="drop-text">Nirvana</p>
+            </div>
+
+            <div class="banda">
+                <img src="banda_quatro.jpeg">
+                <p class="drop-text">Chase Atlantic</p>
+            </div>
+
+            <div class="banda">
+                <img src="download.jpg">
+                <p class="drop-text">Cigarettes After Sex</p>
+            </div>
+
+            <div class="banda">
+                <img src="banda_seis.jpg">
+                <p class="drop-text">Arctic Monkeys</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TELA 3 -->
+
+    <section class="card">
+
+        <h2 class="drop-text">
+            Dito isso, eu te dedico
+        </h2>
+
+        <div class="musicas">
+
+            <!-- Música 1 -->
+
+            <div class="musica-card">
+
+                <img src="m_um.jpeg">
+
+                <h3 class="drop-text">
+                    Heaven
+                </h3>
+
+                <p class="drop-text">
+                    The Neighbourhood
+                </p>
+
+                <button class="play-btn" data-audio="audio1">
+                    ▶
+                </button>
+
+                <audio id="audio1">
+                    <source src="heaven.mp3" type="audio/mp3">
+                </audio>
+
+            </div>
+
+            <!-- Música 2 -->
+
+            <div class="musica-card">
+
+                <img src="m_dois.jpeg">
+
+                <h3 class="drop-text">
+                    I Wanna Be Yours
+                </h3>
+
+                <p class="drop-text">
+                    Arctic Monkeys
+                </p>
+
+                <button class="play-btn" data-audio="audio2">
+                    ▶
+                </button>
+
+                <audio id="audio2">
+                    <source src="i_wanna_be_yours.mp3" type="audio/mp3">
+                </audio>
+
+            </div>
+
+            <!-- Música 3 -->
+
+            <div class="musica-card">
+
+                <img src="m_tres.jpeg">
+
+                <h3 class="drop-text">
+                    meddle about
+                </h3>
+
+                <p class="drop-text">
+                    Chase Atlantic
+                </p>
+
+                <button class="play-btn" data-audio="audio3">
+                    ▶
+                </button>
+
+                <audio id="audio3">
+                    <source src="meddle_about.mp3" type="audio/mp3">
+                </audio>
+
+            </div>
+
+            <!-- Música 4 -->
+
+            <div class="musica-card">
+
+                <img src="banda_dois.png">
+
+                <h3 class="drop-text">
+                    Cigarettes Out The Window
+                </h3>
+
+                <p class="drop-text">
+                    TV Girl
+                </p>
+
+                <button class="play-btn" data-audio="audio4">
+                    ▶
+                </button>
+
+                <audio id="audio4">
+                    <source src="cigarettes_out_the_window.mp3" type="audio/mp3">
+                </audio>
+
+            </div>
+
+            <!-- Música 5 -->
+
+            <div class="musica-card">
+
+                <img src="m_cinco.jpeg  ">
+
+                <h3 class="drop-text">
+                    Heavenly
+                </h3>
+
+                <p class="drop-text">
+                    Cigarettes After Sex
+                </p>
+
+                <button class="play-btn" data-audio="audio5">
+                    ▶
+                </button>
+
+                <audio id="audio5">
+                    <source src="heavenly.mp3" type="audio/mp3">
+                </audio>
+
+            </div>
+
+            <!-- Música 6 -->
+
+            <div class="musica-card">
+
+                <img src="m_seis.jpeg">
+
+                <h3 class="drop-text">
+                    And I Love Her
+                </h3>
+
+                <p class="drop-text">
+                    Nirvana
+                </p>
+
+                <button class="play-btn" data-audio="audio6">
+                    ▶
+                </button>
+
+                <audio id="audio6">
+                    <source src="and_i_love_her.mp3" type="audio/mp3">
+                </audio>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TELA 4 -->
+
+    <section class="card">
+
+        <h2 class="drop-text">
+            Minha Carta de Amor
+        </h2>
+
+        <div class="texto">
+            Oiiii meu amor! Tudo bem, vida?
+            Eu queria declarar meu amor por ti. Sabe, você me faz tão feliz. Enquanto eu fazia esse site, eu chorava muito KKKKK. Sla, fazer coisas para você, seja presentes, cartinhas ou coisas do tipo, faz meu coração se encher ainda mais de amor.
+            Você é muito especial para mim, não só por me fazer feliz, por sempre estar comigo, me ajudar e me ouvir, mas também por ser você, por ser meu amor. Sabe, eu sou muito grato e me sinto bastante sortudo por ter você.
+            Eu não conseguiria viver sem você. Estar com você é tão bom. Eu desaprendi a viver sozinho — na verdade, eu nunca soube e nem quero saber. Só quero estar com você e construir um futuro ao seu lado, uma vida ao seu lado.
+            Espero que eu também esteja trazendo tudo o que você traz para mim. Espero que eu esteja conseguindo te fazer feliz assim como você me faz.
+            Eu te amo muito, minha princesa. Mal vejo a hora de a gente morar juntos e eu poder te tratar como uma princesa.
+            Saiba que eu te amo muito, meu amor, eu te amo.
+        </div>
+
+    </section>
+
+    <!-- TELA 5 -->
+
+    <section class="card">
+
+        <img src="obanai_mitsuri.jpg" class="poema-img">
+
+        <h2 class="drop-text">
+            143
+        </h2>
+
+        <div class="texto">
+Quando te vejo
+<br>
+Sinto palpitar o coração que habita em meu peito
+<br>
+Foi a minha primeira estrofe de amor
+<br>
+E fico feliz por ter sido para você, minha flor
+<br>
+<br>
+Eu te amo tanto
+<br>
+É tanto que como criança me caio aos prantos
+<br>
+<br>
+É incrível o que você faz comigo
+<br>
+Faz eu abrir um sorriso nítido 
+<br> 
+Encheu de cor
+<br>
+Olhos que não tinham cor
+<br>
+<br>
+Sou grato
+<br>
+Você trouxe sentido, isso é um fato
+<br>
+Faz eu querer viver cada momento para estar ao seu lado
+<br>
+<br>
+Para olhar a minha vida
+<br>
+O seu cabelo que me ilumina
+<br>
+Seu beijo que me arrepia
+<br>
+Seu olhar que me fascina
+<br>
+Seu jeitinho que traz alegria 
+<br>
+Seu toque que me excita
+<br>
+<br>
+Você é tão perfeita
+<br>
+É muito mais que uma Deusa
+<br>
+Muito mais que uma princesa 
+<br>
+Ultrapassa a o conceito de beleza
+<br>
+E o conceito de perfeita
+<br>
+<br>
+É nos seus braços que quero chorar 
+<br>
+Você que quero abraçar
+<br>
+Com você quero sonhar
+<br>
+Quero ao seu lado estar
+<br>
+Ao seu lado acordar 
+<br>
+E tudo com você vicenciar
+<br>
+<br>
+Ah, eu te amo tanto
+<br>
+Que me caio aos prantos
+        </div>
+
+    </section>
+
+    <!-- TELA 6 -->
+
+    <section class="card final">
+
+        <h2 class="drop-text">
+            Obrigado por existir ❤️
+        </h2>
+
+        <p class="drop-text">
+            Eu te amo muito, meu Lirio
+        </p>
+
+    </section>
+
+    <script src="java.js"></script>
+
+</body>
+</html>

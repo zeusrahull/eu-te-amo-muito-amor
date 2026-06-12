@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat', sans-serif;
+}
+
+body{
+    background:linear-gradient(
+        180deg,
+        #120606,
+        #220909,
+        #3b0d0d,
+        #ff6a00
+    );
+
+    color:white;
+    overflow-x:hidden;
+}
+
+/* SEÇÕES */
+
+.card{
+    min-height:100vh;
+
+    padding:40px 20px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+/* TÍTULOS */
+
+h1{
+    font-size:2.3rem;
+    font-weight:800;
+    margin-top:20px;
+}
+
+h2{
+    font-size:2rem;
+    font-weight:800;
+    margin-bottom:30px;
+}
+
+h3{
+    font-size:1.2rem;
+}
+
+p{
+    line-height:1.6;
+}
+
+/* IMAGEM PRINCIPAL */
+
+.capa{
+    width:280px;
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 0 40px rgba(255,106,0,.5);
+}
+
+/* BOTÃO ESTILO SPOTIFY */
+
+.spotify-btn{
+    margin-top:25px;
+
+    background:#ff6a00;
+
+    border:none;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:999px;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.spotify-btn:hover{
+    transform:scale(1.08);
+}
+
+/* GALERIA */
+
+.galeria{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+    width:200%;
+}
+
+.foto-card img{
+    width:200px;
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display:block;
+    margin:auto;
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+
+.foto-card img{
+    width: 500px;
+    height:500px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    display:block;
+    margin:auto;
+}
+
+.foto-card p{
+    font: size 5px;;
+}
+
+/* BANDAS */
+
+.bandas{
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+}
+
+.banda{
+    background:rgba(255,255,255,.06);
+
+    border-radius:20px;
+
+    padding:10px;
+}
+
+.banda img{
+    width:100%;
+    border-radius:15px;
+}
+
+/* MÚSICAS */
+
+.musicas{
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.musica-card{
+    background:rgba(0,0,0,.35);
+
+    border-radius:25px;
+
+    padding:15px;
+
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+
+    text-align:left;
+}
+
+.musica-card img{
+    width:80px;
+    height:80px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+}
+
+.play-btn{
+    margin-left:auto;
+
+    width:55px;
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ff6a00;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.play-btn:hover{
+    transform:scale(1.1);
+}
+
+/* TEXTOS */
+
+.texto{
+    background:rgba(255,255,255,.08);
+
+    padding:25px;
+
+    border-radius:25px;
+
+    line-height:2;
+
+    width:100%;
+}
+
+/* POEMA */
+
+.poema-img{
+    width:100%;
+    max-width:350px;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+}
+
+/* FINAL */
+
+.final{
+    background:rgba(0,0,0,.25);
+}
+
+/* ANIMAÇÃO DE PALAVRAS */
+
+.word{
+    display:inline-block;
+
+    opacity:0;
+
+    transform:
+    translateY(-100px)
+    rotate(10deg);
+
+    animation:fall .8s forwards;
+}
+
+@keyframes fall{
+
+    0%{
+        opacity:0;
+        transform:
+        translateY(-100px)
+        rotate(10deg);
+    }
+
+    100%{
+        opacity:1;
+        transform:
+        translateY(0)
+        rotate(0deg);
+    }
+}
+
+/* BARRA DE ROLAGEM */
+
+::-webkit-scrollbar{
+    width:6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ff6a00;
+    border-radius:20px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width:480px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:1.8rem;
+    }
+
+    .capa{
+        width:240px;
+        height:240px;
+    }
+
+    .musica-card{
+        padding:12px;
+    }
+
+}
